@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Generic Medicine Finder</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .navbar {
+            margin: 0;
+        }
+
+
+        .signupForm {
+
+            text-align: center;
+        }
+
+        .inp {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .registerbtn {
+            background-color: #5bc0de;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+
+        }
+
+        .container {
+
+            text-align: left;
+            padding: 16px;
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+
+        form {
+            border: 3px solid #f1f1f1;
+        }
+
+        .container-fluid {
+            background-color: #c8d8e4;
+        }
+
+        .body {
+            background-color: #2b6777;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid ">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.php">Generic Medicine Finder </a>
+            </div>
+            <ul class="nav navbar-nav" style="color :rgb(255, 255, 255)">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Log out</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="signupForm">
+        <form action="/project/medentry.php" method="post">
+            <div class="container">
+                <h1 class="text">Add Medicine Details</h1>
+                <hr>
+
+                <label for="name"><b>Medicine Name</b></label>
+                <input class="inp" type="text" placeholder="Enter Medicine Name" name="mname" id="name" required>
+
+                <label for="Number"><b>MANUFACTURER</b></label>
+                <input class="inp" type="text" placeholder="Enter MANUFACTURER name" name="manufacturer" id="number" required>
+
+                <label for="email"><b>Salt Composition</b></label>
+                <input class="inp" type="text" placeholder="Enter Composition" name="comp" id="email" required>
+                <br>
+                <!-- <label for="pass" ><b>Uses</b></label>
+                <input class="inp" type="text"  name="introd" id="psw" placeholder="Enter Uses of the medicine" style="min-height: 200px;" required>
+                 -->
+                <label for="uses">Uses</label>
+                <textarea class="inp" type="text"  name="introd" id="psw" placeholder="Enter Uses of the medicine" style="min-height: 200px;" required  rows="10" cols="87">
+                </textarea>
+
+                <hr>
+                <button type="submit" class="registerbtn">Submit</button>
+            </div>
+
+        </form>
+    </div>
+    
+</body>
+
+<footer>
+    <div class="container-fluid ">
+        <h2 class="text-center">CONTACT</h2>
+        <div class="row">
+
+            <div class="col-sm-5" style=" text-align :left ">
+                <p>Contact us and we'll get back to you within 24 hours.</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span>Kolkata</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +00 1234567890</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> progyanbiswascs@gmail.com</p>
+                <div style="width: 100%"><iframe width="250" height="100" frameborder="0" scrolling="no"
+                        marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=250&amp;height=200&amp;hl=en&amp;q=Shantipara%20,%20Jalpaiguri%20,%20Westbengal%20,%20India+(Generic%20Medicine%20Finder)&amp;t=k&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                            href="https://www.gps.ie/sport-gps/">bike gps</a></iframe></div>
+            </div>
+
+            <div class="col-sm-7">
+
+                <div class="row">
+
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+
+                </div>
+
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment"
+                    rows="5"></textarea><br>
+
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-info pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+</html>
