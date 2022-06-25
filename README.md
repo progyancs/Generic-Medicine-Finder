@@ -13,4 +13,4 @@ This website is used to find generic composition of any branded medicines.
 
 ### Preview
 
-![](Screenshots/dashboard.png)
+![](Screenshots/Dashboard.png)
